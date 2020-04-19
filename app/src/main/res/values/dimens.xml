@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_16dp">16sp</dimen>
+    <dimen name="margin_34dp">34dp</dimen>
+    <dimen name="corner_radius_40">40dp</dimen>
+    <dimen name="corner_radius_60">60dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+
+    <dimen name="label_text">16sp</dimen>
+    <dimen name="font_size_small">11sp</dimen>
+    <dimen name="font_size_small_extra">12sp</dimen>
+    <dimen name="font_size_large">18sp</dimen>
+    <dimen name="font_size_large_extra">20sp</dimen>
+    <dimen name="font_size_large_extra_x">22sp</dimen>
+    <dimen name="font_size_medium">14sp</dimen>
+    <dimen name="font_size_medium_extra">16sp</dimen>
+    <dimen name="font_size_medium_extra_15">15sp</dimen>
+    <dimen name="font_size_medium_extra_16">16sp</dimen>
+
+    <dimen name="header_shadow_size">16sp</dimen>
+
+
+    <dimen name="corner_radius_2">2dp</dimen>
+    <dimen name="margin_6dp">6dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_14dp">14dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_28dp">28dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+
+</resources>

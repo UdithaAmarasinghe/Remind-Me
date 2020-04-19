@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_menu_container"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="@color/purple_menu"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:id="@+id/layout_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_16dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/ic_action_name" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16dp"
+            android:layout_marginRight="@dimen/margin_16dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="USER"
+                android:textAllCaps="false"
+                android:textColor="@color/app_white"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/app_white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="0dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:paddingTop="@dimen/margin_8dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="@dimen/margin_16dp">
+
+            <Button
+                android:id="@+id/nav_btn_home"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="14dp"
+                android:text="Home"
+                android:textAllCaps="false"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_size_medium_extra_16" />
+
+            <Button
+                android:id="@+id/nav_btn_profile"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="14dp"
+                android:text="Profile"
+                android:textAllCaps="false"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_size_medium_extra_16" />
+
+            <Button
+                android:id="@+id/nav_btn_pending"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="14dp"
+                android:text="Pending List"
+                android:textAllCaps="false"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_size_medium_extra_16" />
+
+
+            <Button
+                android:id="@+id/nav_btn_logout"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:paddingLeft="14dp"
+                android:text="Logout"
+                android:textAllCaps="false"
+                android:textColor="@color/app_white"
+                android:textSize="@dimen/font_size_medium_extra_16" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

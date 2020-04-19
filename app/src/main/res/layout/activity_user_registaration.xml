@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_white">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/actionbar_common" />
+
+
+    <ScrollView
+        android:id="@+id/scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_16dp">
+
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center_vertical"
+                    android:text="Title"
+                    android:textColor="@color/app_black"
+                    android:textSize="@dimen/label_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:id="@+id/view_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.3dp"
+                    android:layout_below="@+id/txt_title"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bottom_line_effets" />
+
+
+                <View
+                    android:id="@+id/view_title_name_circle"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignTop="@+id/txt_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/bg_circle_user_registration" />
+
+
+                <EditText
+                    android:id="@+id/edt_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_title"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:maxLength="25"
+                    android:background="@android:color/transparent"
+                    android:hint="First Name"
+                    android:inputType="textCapSentences"
+                    android:text=""
+                    android:textColor="@color/app_black"
+                    android:textColorHint="@color/app_black"
+                    android:textSize="@dimen/label_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_title" />
+
+                <View
+                    android:id="@+id/view_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.3dp"
+                    android:layout_below="@+id/edt_first_name"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bottom_line_effets" />
+
+
+                <View
+                    android:id="@+id/view_first_name_circle"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignTop="@+id/edt_first_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/bg_circle_user_registration" />
+
+
+                <EditText
+                    android:id="@+id/edt_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_first_name"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Last Name"
+                    android:inputType="textCapSentences"
+                    android:maxLength="25"
+                    android:text=""
+                    android:textColor="@color/app_black"
+                    android:textColorHint="@color/app_black"
+                    android:textSize="@dimen/label_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:id="@+id/view_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.3dp"
+                    android:layout_below="@+id/edt_last_name"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bottom_line_effets" />
+
+
+                <View
+                    android:id="@+id/view_last_name_circle"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignTop="@+id/edt_last_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/bg_circle_user_registration" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/view_last_name"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_last_name">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Male"
+                        android:textColor="@color/app_black"
+                        android:theme="@style/Theme.RadioButton" />
+
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female"
+                        android:textColor="@color/app_black"
+                        android:theme="@style/Theme.RadioButton" />
+
+
+                </RadioGroup>
+
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:text=""
+                    android:maxLength="25"
+                    android:textColor="@color/app_black"
+                    android:textColorHint="@color/app_black"
+                    android:textSize="@dimen/label_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:id="@+id/view_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.3dp"
+                    android:layout_below="@+id/edt_email"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bottom_line_effets" />
+
+
+                <View
+                    android:id="@+id/view_email_circle"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignTop="@+id/edt_email"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/bg_circle_user_registration" />
+
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_email"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:text=""
+                    android:textColor="@color/app_black"
+                    android:maxLength="25"
+                    android:textColorHint="@color/app_black"
+                    android:textSize="@dimen/label_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:id="@+id/view_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.3dp"
+                    android:layout_below="@+id/edt_password"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bottom_line_effets" />
+
+
+                <View
+                    android:id="@+id/view_password_circle"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignTop="@+id/edt_password"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/bg_circle_user_registration" />
+
+
+                <EditText
+                    android:id="@+id/edt_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_password"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:text=""
+                    android:textColor="@color/app_black"
+                    android:textColorHint="@color/app_black"
+                    android:textSize="@dimen/label_text"
+                    android:maxLength="25"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:id="@+id/view_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.3dp"
+                    android:layout_below="@+id/edt_confirm_password"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bottom_line_effets" />
+
+
+                <View
+                    android:id="@+id/view_confirm_password_circle"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignTop="@+id/edt_confirm_password"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/bg_circle_user_registration" />
+
+
+                <TextView
+                    android:id="@+id/text_requried_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/view_confirm_password"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/app_user_registration_req_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="26dp"
+                    android:text="Required fields"
+                    android:textColor="@color/app_black" />
+
+                <View
+                    android:id="@+id/view_requried_fields"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignStart="@+id/text_requried_fields"
+                    android:layout_alignBottom="@+id/text_requried_fields"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_circle_user_registration" />
+
+
+                <TextView
+                    android:id="@+id/text_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_requried_fields"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="32dp"
+                    android:gravity="center"
+                    android:text="@string/already_have_an_account_sign_in"
+                    android:textColor="@color/app_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_create"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_btn_pink_bg"
+        android:drawableRight="@mipmap/ic_arrow_next"
+        android:paddingLeft="44dp"
+        android:paddingRight="16dp"
+        android:text="CREATE ACCOUNT"
+        android:textColor="@color/app_white"
+        android:textSize="@dimen/font_size_large"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

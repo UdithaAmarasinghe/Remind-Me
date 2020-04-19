@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/txt_category"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ssss"
+            android:textColor="@color/app_black" />
+
+        <TextView
+            android:id="@+id/txt_items"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ssss"
+            android:textColor="@color/app_black" />
+
+        <!-- <TextView
+             android:id="@+id/txt_time"
+             android:layout_width="0dp"
+             android:textColor="@color/app_black"
+             android:gravity="center"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="ssss" />-->
+
+        <!-- <TextView
+             android:id="@+id/txt_radius"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:textColor="@color/app_black"
+             android:text="ssss" />-->
+
+        <TextView
+            android:id="@+id/txt_priority"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ssss"
+            android:textColor="@color/app_black" />
+
+        <!-- <TextView
+             android:id="@+id/txt_remark"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:textColor="@color/app_black"
+             android:text="ssss" />-->
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_remove"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bin" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/app_white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginRight="@dimen/margin_16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BAR"
+            android:textColor="@color/app_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beer"
+            android:textColor="@color/app_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remark"
+            android:textColor="@color/app_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remark"
+            android:textColor="@color/app_gray"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_btn"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_width="match_parent"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_snooze"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_pink_bg"
+                android:gravity="center"
+                android:text="snooze"
+                android:textColor="#fff"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_below="@+id/btn_add_list"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_pink_bg"
+                android:gravity="center"
+                android:text="Done"
+                android:textColor="#fff"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_navigate"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_pink_bg"
+                android:gravity="center"
+                android:text="Navigate"
+                android:textColor="#fff"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bottom_line_effets" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:id="@+id/layout_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16dp">
+
+        <ImageButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="38dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/ic_close"
+            android:tint="@color/app_gray" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/layout_close"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_medium_extra"
+        android:gravity="center_horizontal"
+        android:text="ARE YOU SURE YOU WANT TO LOGOUT FROM Remind Me APP?"
+        android:textColor="@color/app_black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_34dp"
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:layout_below="@+id/text_data"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_log_out"
+            style="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:text="YES"
+            android:background="@color/app_black"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/font_size_medium_extra" />
+
+        <Button
+            android:id="@+id/btn_cancel_log_out"
+            style="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:text="NO"
+            android:background="@drawable/selector_btn_pink_bg"
+            android:textColor="@color/app_white"
+            android:textSize="@dimen/font_size_medium_extra" />
+
+    </LinearLayout>
+
+</RelativeLayout>

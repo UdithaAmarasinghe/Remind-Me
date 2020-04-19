@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Remind Me</string>
+    <string name="already_have_an_account_sign_in">ALREADY HAVE AN ACCOUNT <u><b>SIGN IN</b></u></string>
+
+
+    <string-array name="user_type">
+        <item></item>
+        <item>Mr</item>
+        <item>Mrs</item>
+        <item>Mast</item>
+        <item>Miss</item>
+        <item>Dr</item>
+        <item>Dr (Ms.)</item>
+        <item>Dr (Mrs.)</item>
+        <item>Prof</item>
+        <item>Prof (Ms.)</item>
+        <item>Prof (Mrs.)</item>
+        <item>Rev</item>
+        <item>Baby</item>
+        <item>Sis</item>
+        <item>Ms</item>
+    </string-array>
+
+
+    <string-array name="priority_type">
+        <item></item>
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+
+    </string-array>
+
+    <string-array name="radius_type">
+        <item></item>
+        <item>1 KM</item>
+        <item>2 KM</item>
+        <item>3 KM</item>
+        <item>4 KM</item>
+        <item>5 KM</item>
+    </string-array>
+
+
+    <string-array name="priority_type_id">
+        <item></item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+
+    </string-array>
+
+    <string-array name="user_type_id">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+
+
+    <string name="permission_rationale">Please grant location permission to start the service</string>
+    <string name="permission_denied_explanation">You have not granted location permission. So the service cannot be started.</string>
+    <string name="settings">settings</string>
+    <string name="title_alert_no_intenet">No internet</string>
+    <string name="msg_alert_no_internet">Please make sure that you have active internet connection.</string>
+    <string name="no_google_playservice_available">No Google Playservice found. Please install it.</string>
+    <string name="msg_location_service_not_started">Location Tracking Not Started</string>
+    <string name="msg_location_service_started">Location Tracking Started</string>
+    <string name="btn_label_refresh">Refresh</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:id="@+id/layout_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16dp">
+
+        <ImageButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="38dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/ic_close"
+            android:tint="@color/app_gray" />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_data"
+        android:layout_below="@+id/layout_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "178799424731",
+    "firebase_url": "https://modular-edge-267715-a85b7.firebaseio.com",
+    "project_id": "modular-edge-267715-a85b7",
+    "storage_bucket": "modular-edge-267715-a85b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178799424731:android:aaccdaf2443e7f90c748fe",
+        "android_client_info": {
+          "package_name": "com.remindme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178799424731-66fld8gs23tssclkdn6gtkq44eqlu0s4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMHhzcsZQwYHmOAZp4H2nv-Gbl1Lw1f50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178799424731-66fld8gs23tssclkdn6gtkq44eqlu0s4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

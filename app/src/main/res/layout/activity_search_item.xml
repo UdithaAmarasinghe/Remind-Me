@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_search_box_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_dark_maroon_actionbar"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            android:transitionName="filter_container"
+            android:paddingBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/btn_left_back"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="54dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="?attr/actionBarItemBackground"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_arrow_back"
+                android:tint="@color/app_white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Category List"
+                    android:textColor="@color/app_white"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignLeft="@+id/lbl_title"
+                    android:layout_alignStart="@+id/lbl_title"
+                    android:layout_below="@+id/lbl_title">
+
+                    <EditText
+                        android:id="@+id/edt_search_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="16dp"
+                        android:inputType="textCapWords"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/app_white"
+                        android:ellipsize="end"
+                        android:hint="Search"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:imeOptions="actionDone"
+                        android:textColor="@color/app_black"
+                        android:textColorHint="#bcc0de"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_bg"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="No result found 'ABC asofij' "
+        android:textColor="#7a8baf"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_white"
+        android:layout_below="@+id/layout_bg" />
+
+</RelativeLayout>

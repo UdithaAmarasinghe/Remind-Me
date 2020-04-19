@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="purple_menu_item_drawable_normal">#b662a0</color>
+    <color name="purple_menu_item_drawable_selected">#da76c0</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="app_blue_selected">#0D77E0</color>
+    <color name="app_gray_text">#505050</color>
+    <color name="app_gray_text_title">#737373</color>
+    <color name="app_gray_text_title1">#e7e7e7</color>
+    <color name="app_white">#ffffff</color>
+    <color name="calendar_gray_txt">#504f4f</color>
+    <color name="app_black_transparent">#91414141</color>
+    <color name="app_black">#1a1a1a</color>
+    <color name="app_gray">#494949</color>
+    <color name="app_disabled">#74494949</color>
+    <color name="app_gray_btn">#262626</color>
+    <color name="app_hint_text_color">#c186aa</color>
+    <color name="app_purple">#A3168B</color>
+    <color name="app_purple_selected">#A7740D63</color>
+    <color name="app_dark_maroon5">#6c2250</color>
+    <color name="purple_menu">#64256f</color>
+    <color name="purple_menu_item_selected">#773184</color>
+    <color name="app_dark_maroon_actionbar">#832a5f</color>
+    <color name="app_user_registration_req_bg">#f1f1f1</color>
+    <color name="disable_bg_proceed_btn">#262626</color>
+    <color name="app_light_pink">#FFEE3076</color>
+    <color name="text_hint_gray">#4dffffff</color>
+    <color name="app_light_pink_selected">#aaee3076</color>
+    <color name="event_list_line">#c3c2c2</color>
+    <color name="success_dialog">#13132e</color>
+    <color name="app_dark_maroon1">#5c2646</color>
+    <color name="app_red">#5C2626</color>
+    <color name="notification">#a12257</color>
+</resources>
