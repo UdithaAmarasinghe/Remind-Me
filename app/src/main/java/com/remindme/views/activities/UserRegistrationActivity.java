@@ -111,8 +111,11 @@ public class UserRegistrationActivity extends BaseActivity {
                 @Override
                 public void onSuccessUserRegistration(UserRegistrationResponse response) {
                     dismissProgress();
-                    Toast.makeText(mContext, response.getUser().getCode(), Toast.LENGTH_SHORT).show();
-                    otpBottomSheetDialog();
+                    if(!response.getMessage().equals("User is Already Exist")){
+                        otpBottomSheetDialog();
+                    }else{
+                        showMessageDialog(response.getMessage());
+                    }
                 }
 
                 @Override

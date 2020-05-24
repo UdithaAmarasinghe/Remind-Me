@@ -192,7 +192,6 @@
                     android:hint="Email"
                     android:inputType="textEmailAddress"
                     android:text=""
-                    android:maxLength="25"
                     android:textColor="@color/app_black"
                     android:textColorHint="@color/app_black"
                     android:textSize="@dimen/label_text"

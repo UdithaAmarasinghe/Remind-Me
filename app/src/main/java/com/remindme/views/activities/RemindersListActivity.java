@@ -140,7 +140,7 @@ public class RemindersListActivity extends BaseActivity {
         int hour = c.get(Calendar.HOUR_OF_DAY);
         int minute = c.get(Calendar.MINUTE);
 
-        mTimePicker = new TimePickerDialog(RemindersListActivity.this, R.style.Dialog, new TimePickerDialog.OnTimeSetListener() {
+        mTimePicker = new TimePickerDialog(RemindersListActivity.this, R.style.DialogTheme, new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(TimePicker timePicker, int selectedHour, int selectedMinute) {
 
@@ -158,26 +158,6 @@ public class RemindersListActivity extends BaseActivity {
 
             }
         }, hour, minute, false);//No 24 hour time
-
-
-        // Create a TextView programmatically.
-        TextView tv = new TextView(this);
-
-        // Create a TextView programmatically
-        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
-                RelativeLayout.LayoutParams.WRAP_CONTENT, // Width of TextView
-                RelativeLayout.LayoutParams.WRAP_CONTENT); // Height of TextView
-        tv.setLayoutParams(lp);
-        tv.setPadding(10, 10, 10, 10);
-        tv.setGravity(Gravity.CENTER);
-        tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP,20);
-        tv.setText("Select Time From");
-        tv.setTextColor(Color.parseColor("#ffffff"));
-        tv.setBackgroundColor(Color.parseColor("#832a5f"));
-        mTimePicker.setCustomTitle(tv);
-
-        mTimePicker.setTitle("Select Time From");
-
         mTimePicker.show();
 
     }
@@ -190,7 +170,7 @@ public class RemindersListActivity extends BaseActivity {
         int hour = c.get(Calendar.HOUR_OF_DAY);
         int minute = c.get(Calendar.MINUTE);
 
-        mTimePicker = new TimePickerDialog(RemindersListActivity.this, R.style.Dialog, new TimePickerDialog.OnTimeSetListener() {
+        mTimePicker = new TimePickerDialog(RemindersListActivity.this, R.style.DialogTheme, new TimePickerDialog.OnTimeSetListener() {
             @Override
             public void onTimeSet(TimePicker timePicker, int selectedHour, int selectedMinute) {
 
@@ -208,24 +188,6 @@ public class RemindersListActivity extends BaseActivity {
 
             }
         }, hour, minute, false);//No 24 hour time
-
-        // Create a TextView programmatically.
-        TextView tv = new TextView(this);
-
-        // Create a TextView programmatically
-        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
-                RelativeLayout.LayoutParams.WRAP_CONTENT, // Width of TextView
-                RelativeLayout.LayoutParams.WRAP_CONTENT); // Height of TextView
-        tv.setLayoutParams(lp);
-        tv.setPadding(10, 10, 10, 10);
-        tv.setGravity(Gravity.CENTER);
-        tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP,20);
-        tv.setText("Select Time To");
-        tv.setTextColor(Color.parseColor("#ffffff"));
-        tv.setBackgroundColor(Color.parseColor("#832a5f"));
-        mTimePicker.setCustomTitle(tv);
-
-        mTimePicker.setTitle("Select Time To");
         mTimePicker.show();
 
     }

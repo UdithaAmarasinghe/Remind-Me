@@ -83,6 +83,8 @@ public class AddReminderActivity extends BaseActivity {
     private String formattedTime;
     private Calendar now;
     private String mDate = null;
+    SimpleDateFormat displayFormat, parseFormat;
+    Date timeFrom = null, timeTo = null;
 
     @OnClick(R.id.btn_left_back)
     public void onClickBack(View view) {
@@ -91,6 +93,34 @@ public class AddReminderActivity extends BaseActivity {
 
     @OnClick(R.id.btn_save)
     public void onClickSave(View view) {
+
+
+        if (!mIsMultipleReminders) {
+
+            displayFormat = new SimpleDateFormat("HH:mm");
+            parseFormat = new SimpleDateFormat("hh:mm a");
+
+            try {
+                timeFrom = parseFormat.parse(txtFrom.getText().toString());
+                timeTo = parseFormat.parse(txtTo.getText().toString());
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
+            Reminders reminders = new Reminders();
+            reminders.setCategoryId(mSelectedCategory.getId());
+            reminders.setCategory(txtCategory.getText().toString());
+            reminders.setItemId(String.valueOf(mItemList.getId()));
+            reminders.setItem(txtItem.getText().toString());
+            reminders.setPriority(txtPriority.getText().toString());
+            reminders.setRadius(txtRadius.getText().toString().replace("KM", ""));
+            reminders.setRemark(txtRemark.getText().toString());
+            reminders.setFrom(txtDate.getText().toString() + " " + displayFormat.format(timeFrom));
+            reminders.setTo(txtDate.getText().toString() + " " + displayFormat.format(timeTo));
+
+            mReminders.add(reminders);
+        }
+
 
         showProgress();
         mUserSync.addReminders(mAccessToken, mReminders, new UserSync.UserSyncListeners.AddRemindersCallback() {
@@ -153,9 +183,9 @@ public class AddReminderActivity extends BaseActivity {
                 !txtFrom.getText().toString().isEmpty() && !txtTo.getText().toString().isEmpty()) {
 
 
-            SimpleDateFormat displayFormat = new SimpleDateFormat("HH:mm");
-            SimpleDateFormat parseFormat = new SimpleDateFormat("hh:mm a");
-            Date timeFrom = null, timeTo = null;
+             displayFormat = new SimpleDateFormat("HH:mm");
+             parseFormat = new SimpleDateFormat("hh:mm a");
+
             try {
                 timeFrom = parseFormat.parse(txtFrom.getText().toString());
                 timeTo = parseFormat.parse(txtTo.getText().toString());
