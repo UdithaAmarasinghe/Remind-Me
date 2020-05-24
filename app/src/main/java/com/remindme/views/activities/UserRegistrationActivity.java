@@ -117,7 +117,6 @@ public class UserRegistrationActivity extends BaseActivity {
                         showMessageDialog(response.getMessage());
                     }
                 }
-
                 @Override
                 public void onFailedUserRegistration(String message, int code) {
                     if (message != null) {
